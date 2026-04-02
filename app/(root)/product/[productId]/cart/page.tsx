@@ -1,3 +1,5 @@
+"use client";
+
 import Count from "@/components/count";
 
 function Cart() {
