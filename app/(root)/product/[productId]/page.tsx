@@ -1,15 +1,19 @@
-"use client";
+// "use client";
 
-import { notFound, useParams } from "next/navigation";
+// import { useParams } from "next/navigation";
 
-// function ProductDetail(props: PageProps<"/product/[productId]">) {
-function ProductDetail() {
+async function ProductDetail(props: PageProps<"/product/[productId]">) {
+  // function ProductDetail() {
+  const { productId } = await props.params;
   //   const { productId } = useParams();
-  const { productId } = useParams<{ productId: string }>();
+  //   const { productId } = useParams<{ productId: string }>();
 
-  if (parseInt(productId) > 100) {
-    notFound();
+  if (parseInt(productId) > 120) {
+    // notFound();
+    throw new Error("Cannot find product!");
   }
+
+  await new Promise((resolve) => setTimeout(resolve, 2000));
 
   return (
     <>
