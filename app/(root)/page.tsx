@@ -1,4 +1,4 @@
-import Carousel from "@/components/carousel";
+// import Carousel from "@/components/carousel";
 import Link from "next/link";
 
 export default function Home() {
@@ -25,6 +25,7 @@ export default function Home() {
         Hello NextJs - {new Date().toLocaleTimeString()}
       </h1>
       <Link href={"/login"}>Go to Login</Link>
+      <Link href={"/blog"}>Go to Blog</Link>
       <Link href={"/product"}>Go to Product</Link>
       {/* <Carousel
         items={items}
