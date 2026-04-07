@@ -1,3 +1,5 @@
+import PostHybrid from "@/components/postHybrid";
+
 export interface Post {
   id: string;
   title: string;
@@ -15,11 +17,7 @@ async function PostPage() {
   return (
     <>
       <h1>Post List</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.id}>{post.title}</li>
-        ))}
-      </ul>
+      <PostHybrid initialData={posts} />
     </>
   );
 }
