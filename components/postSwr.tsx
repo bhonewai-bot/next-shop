@@ -23,9 +23,7 @@ function PostSwr({ postId }: { postId: string }) {
   return (
     <div>
       <h1>Post SWR</h1>
-      <p>
-        {post?.title} by {post?.content}
-      </p>
+      <p>{post?.title}</p>
     </div>
   );
 }

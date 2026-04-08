@@ -53,9 +53,7 @@ function PostClient({ postId }: { postId: string }) {
   return (
     <>
       <h1 className="text-2xl">Post Client</h1>
-      <p>
-        {post?.title} by {post?.content}
-      </p>
+      <p>{post?.title}</p>
     </>
   );
 }

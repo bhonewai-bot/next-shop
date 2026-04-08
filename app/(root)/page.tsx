@@ -27,6 +27,7 @@ export default function Home() {
       <Link href={"/login"}>Go to Login</Link>
       <Link href={"/blog"}>Go to Blog</Link>
       <Link href={"/posts"}>Go to Posts</Link>
+      <Link href={"/users"}>Go to Users</Link>
       {/* <Carousel
         items={items}
         autoplay={{ enabled: true, interval: 3000 }}

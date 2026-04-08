@@ -3,7 +3,7 @@ import PostHybrid from "@/components/postHybrid";
 export interface Post {
   id: string;
   title: string;
-  content?: string;
+  authorId: string;
 }
 
 async function PostPage() {
